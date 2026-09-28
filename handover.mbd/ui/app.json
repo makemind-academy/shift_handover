@@ -1,0 +1,73 @@
+{
+  "type": "application",
+  "title": "Shift Handover",
+  "version": "1.0.0",
+  "initialRoute": "/board",
+  "routes": {
+    "/board": "ui://pages/board"
+  },
+  "theme": {
+    "mode": "light",
+    "color": {
+      "primary": "#2563eb",
+      "onPrimary": "#ffffff",
+      "primaryContainer": "#dfe9fb",
+      "onPrimaryContainer": "#10264d",
+      "surface": "#ffffff",
+      "onSurface": "#101823",
+      "surfaceContainerHighest": "#f2f4f8",
+      "onSurfaceVariant": "#7c8896",
+      "outline": "#e3e8ef",
+      "outlineVariant": "#e3e8ef",
+      "error": "#b3261e",
+      "onError": "#ffffff",
+      "warning": "#b45309",
+      "onWarning": "#ffffff",
+      "inverseSurface": "#101823",
+      "inverseOnSurface": "#ffffff"
+    },
+    "spacing": {
+      "xxs": 2,
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48
+    },
+    "shape": {
+      "none": 0,
+      "extraSmall": 4,
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "extraLarge": 28,
+      "full": 999
+    },
+    "fonts": {
+      "JetBrainsMono": {
+        "source": "asset",
+        "family": "JetBrainsMono"
+      }
+    }
+  },
+  "state": {
+    "initial": {
+      "crew": "",
+      "shiftLabel": "",
+      "openCount": 0,
+      "rows": [],
+      "worst": 0,
+      "worstNote": "",
+      "closedCount": 0,
+      "closedLine": "",
+      "handoverRule": "",
+      "notice": ""
+    }
+  },
+  "onInit": {
+    "type": "tool",
+    "tool": "shift.handover",
+    "params": {}
+  }
+}
